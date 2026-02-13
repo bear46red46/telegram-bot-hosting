@@ -1,1 +1,72 @@
-
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Bot Hosting 24/7</title>
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Telegram Bot Hosting 24/7</h1>
+            <div class="user-info">
+                <span id="username">Foydalanuvchi</span> | 
+                <span id="email">email@example.com</span>
+            </div>
+        </div>
+        
+        <div class="content">
+            <!-- Yuklash qismi -->
+            <div class="upload-section">
+                <h3>📤 Fayllarni yuklang</h3>
+                <p>bot.py va requirements.txt fayllarini tanlang</p>
+                
+                <div class="file-inputs">
+                    <div class="input-group">
+                        <label for="botFile" class="file-label">📄 bot.py</label>
+                        <input type="file" id="botFile" class="file-input" accept=".py">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="requirementsFile" class="file-label">📦 requirements.txt</label>
+                        <input type="file" id="requirementsFile" class="file-input" accept=".txt">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Yuklangan fayllar ro'yxati -->
+            <div id="fileList" class="file-list"></div>
+            
+            <!-- Deploy tugmasi -->
+            <button id="deployBtn" class="deploy-btn" disabled>
+                🚀 Deploy Bot
+            </button>
+            
+            <!-- Konsol qismi -->
+            <div class="console">
+                <div class="console-header">
+                    <span>📟 Konsol</span>
+                    <span class="status">
+                        <span class="status-dot" id="statusDot"></span>
+                        <span id="statusText">To'xtatilgan</span>
+                    </span>
+                </div>
+                <div id="consoleOutput" class="console-output">
+                    Bot hali ishga tushirilmagan...
+                </div>
+            </div>
+            
+            <!-- 24/7 sozlamalari -->
+            <div id="pingSection" class="ping-section" style="display: none;">
+                <h4>🔔 24/7 ishlashi uchun</h4>
+                <p>Quyidagi URL ni cron-job.org ga qo'shing:</p>
+                <div class="ping-url" id="pingUrl">https://...</div>
+                <p class="ping-note">⚠️ Har 5 daqiqada ping qilinadi</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/public/script.js"></script>
+</body>
+</html>
