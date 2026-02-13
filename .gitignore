@@ -1,0 +1,22 @@
+# Node.js modullari
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Vaqtinchalik fayllar
+uploads/
+bots/
+*.tmp
+*.log
+
+# Operating system fayllari
+.DS_Store
+Thumbs.db
+
+# Environment fayllari
+.env
+.env.local
+.env.production
+
+# Render konfiguratsiyasi (agar sirli ma'lumotlar bo'lsa)
+*.yaml
